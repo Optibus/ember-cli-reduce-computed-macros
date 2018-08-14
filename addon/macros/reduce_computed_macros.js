@@ -10,7 +10,10 @@ var isArray = Ember.isArray;
 var guidFor = Ember.guidFor;
 
 var EmberError = Ember.Error;
-var forEach = Ember.EnumerableUtils.forEach;
+var forEach = function (obj, callback, thisArg) {
+    return obj.forEach ? obj.forEach(callback, thisArg) : Array.prototype.forEach.call(obj, callback, thisArg);
+  };
+;
 var run = Ember.run;
 var addObserver = Ember.addObserver;
 var SubArray = Ember.SubArray;
