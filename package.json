@@ -33,7 +33,7 @@
     "glob": "^4.0.5"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "ember-cli-babel": "^6.6.0"
   },
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
